@@ -26,7 +26,7 @@
       {
         id:"stereoA",
         cluster:"sun",
-        type:"lagrange",
+        type:"generic",
         label:"🛰️ STEREO A 🇺🇸",
         name:"STEREO A",
         url:"https://stereo-ssc.nascom.nasa.gov/",
@@ -40,14 +40,13 @@
         },
         events:[
           {date:"2006-10-26", label:"Launch", type:"start"},
-          {date:"2007-01-15", label:"Earth flyby (assist)"},
-          {date:"2007-02-01", label:"Heliocentric orbit ahead of Earth established"}
+          {date:"2006-12-15", label:"Lunar swingby → heliocentric orbit ahead of Earth"}
         ]
       },
       {
         id:"parker",
         cluster:"sun",
-        type:"lagrange",
+        type:"generic",
         label:"🛰️ Parker Solar Probe 🇺🇸",
         name:"Parker Solar Probe",
         url:"http://parkersolarprobe.jhuapl.edu/",
@@ -61,7 +60,7 @@
         },
         events:[
           {date:"2018-08-12", label:"Launch", type:"start"},
-          {date:"2021-04-29", label:"8th perihelion (~6.5 million miles)"},
+          {date:"2021-04-29", label:"8th perihelion (~10.4 million km from Sun)"},
           {date:"2024-11-06", label:"Final Venus gravity assist"},
           {date:"2024-12-24", label:"Record perihelion (~6.1 million km from Sun)"}
         ]
@@ -69,7 +68,7 @@
       {
         id:"solarOrbiter",
         cluster:"sun",
-        type:"lagrange",
+        type:"generic",
         label:"🛰️ Solar Orbiter 🇪🇺🇺🇸",
         name:"Solar Orbiter",
         url:"https://www.esa.int/Science_Exploration/Space_Science/Solar_Orbiter",
@@ -84,7 +83,8 @@
         events:[
           {date:"2020-02-10", label:"Launch", type:"start"},
           {date:"2020-06-15", label:"First perihelion (~0.52 AU)"},
-          {date:"2022-03-26", label:"First close solar images released"},
+          {date:"2020-07-16", label:"First close solar images released ('campfires')"},
+          {date:"2022-03-26", label:"First close perihelion (~0.32 AU)"},
           {date:"2025-02-18", label:"Venus flyby (inclination phase)"}
         ]
       },
@@ -110,7 +110,7 @@
           {date:"2020-04-10", label:"Earth flyby (assist)"},
           {date:"2020-10-15", label:"1st Venus flyby"},
           {date:"2021-10-01", label:"1st Mercury flyby"},
-          {date:"2026-11", label:"Orbital insertion"}
+          {date:"2026-11-21", label:"Mercury orbit insertion (planned)"}
         ]
       },
 
@@ -135,7 +135,7 @@
           {date:"1993-12-02", label:"SM1"},
           {date:"1997-02-11", label:"SM2"},
           {date:"1999-12-20", label:"SM3A"},
-          {date:"2002-03-12", label:"SM3B"},
+          {date:"2002-03-01", label:"SM3B"},
           {date:"2009-05-11", label:"SM4"}
         ]
       },
@@ -157,7 +157,7 @@
         events:[
           {date:"1998-11-20", label:"Launch (Zarya)", type:"start"},
           {date:"2000-11-02", label:"Permanently inhabited", type:"start"},
-          {date:"2030", label:"Deorbit (planned)", type:"end"}
+          {date:"2030", label:"End of operations (planned; deorbit early 2031)", type:"end"}
         ]
       },
       {
@@ -202,14 +202,18 @@
         name:"Neil Gehrels Swift Observatory",
         url:"https://swift.gsfc.nasa.gov/",
         summaries:{
-          en:"Swift is a multiwavelength observatory designed to rapidly detect and follow up gamma-ray bursts. It combines gamma-ray, X-ray and UV/optical instruments to capture the early afterglow and monitor transient events, also contributing to studies of supernovae, tidal disruption events and variable AGN.",
-          it:"Swift è un osservatorio multi-banda progettato per rilevare rapidamente i gamma-ray burst e seguirne l’evoluzione. Combina strumenti in gamma, X e UV/ottico per osservare l’afterglow iniziale e monitorare transienti, contribuendo anche a studi su supernovae, eventi di distruzione mareale e AGN variabili.",
-          es:"Swift detecta rápidamente estallidos de rayos gamma y los sigue en varias longitudes de onda (gamma, X, UV/óptico). También estudia otros transitorios como supernovas y AGN variables.",
-          pt:"O Swift detecta rapidamente GRBs e faz acompanhamento multi-comprimento de onda (gama, X, UV/óptico). Também observa outros transientes como supernovas e AGNs variáveis.",
-          fr:"Swift détecte rapidement les sursauts gamma et en assure le suivi multi-longueurs d’onde (gamma, X, UV/optique). Il observe aussi d’autres transitoires comme supernovae et noyaux actifs variables.",
-          de:"Swift ist auf die schnelle Entdeckung und Nachbeobachtung von Gamma-Ray Bursts ausgelegt (Gamma, Röntgen, UV/optisch). Zudem liefert es Daten zu weiteren Transienten wie Supernovae und variablen AGN."
+          en:"Swift is a multiwavelength observatory designed to rapidly detect and follow up gamma-ray bursts. It combines gamma-ray, X-ray and UV/optical instruments to capture the early afterglow and monitor transient events, also contributing to studies of supernovae, tidal disruption events and variable AGN. A 2026 commercial reboost attempt was cancelled, so Swift’s decaying orbit is expected to lead to reentry.",
+          it:"Swift è un osservatorio multi-banda progettato per rilevare rapidamente i gamma-ray burst e seguirne l’evoluzione. Combina strumenti in gamma, X e UV/ottico per osservare l’afterglow iniziale e monitorare transienti, contribuendo anche a studi su supernovae, eventi di distruzione mareale e AGN variabili. Un tentativo commerciale di reboost nel 2026 è stato annullato: senza di esso l’orbita in decadimento porterà al rientro in atmosfera.",
+          es:"Swift detecta rápidamente estallidos de rayos gamma y los sigue en varias longitudes de onda (gamma, X, UV/óptico). También estudia otros transitorios como supernovas y AGN variables. Un intento comercial de elevar su órbita en 2026 fue cancelado, por lo que se espera su reentrada.",
+          pt:"O Swift detecta rapidamente GRBs e faz acompanhamento multi-comprimento de onda (gama, X, UV/óptico). Também observa outros transientes como supernovas e AGNs variáveis. Uma tentativa comercial de elevar sua órbita em 2026 foi cancelada, e a reentrada é esperada.",
+          fr:"Swift détecte rapidement les sursauts gamma et en assure le suivi multi-longueurs d’onde (gamma, X, UV/optique). Il observe aussi d’autres transitoires comme supernovae et noyaux actifs variables. Une tentative commerciale de rehaussement d’orbite en 2026 a été annulée ; sa rentrée atmosphérique est donc attendue.",
+          de:"Swift ist auf die schnelle Entdeckung und Nachbeobachtung von Gamma-Ray Bursts ausgelegt (Gamma, Röntgen, UV/optisch). Zudem liefert es Daten zu weiteren Transienten wie Supernovae und variablen AGN. Ein kommerzieller Reboost-Versuch 2026 wurde abgebrochen; der Wiedereintritt wird daher erwartet."
         },
-        events:[{date:"2004-11-20", label:"Launch", type:"start"}]
+        events:[
+          {date:"2004-11-20", label:"Launch", type:"start"},
+          {date:"2026-07-03", label:"Katalyst LINK reboost spacecraft launched"},
+          {date:"2026-08-19", label:"Reboost attempt cancelled (LINK attitude-control problems)"}
+        ]
       },
       {
         id:"tess",
@@ -228,7 +232,7 @@
         },
         events:[
           {date:"2018-04-18", label:"Launch", type:"start"},
-          {date:"2020-07", label:"Extended mission begins"}
+          {date:"2020-07", label:"First mission extension (EM1) starts"}
         ]
       },
       {
@@ -343,8 +347,8 @@
         },
         events:[
           {date:"2007-02-17", label:"Launch (as THEMIS)", type:"start"},
-          {date:"2009-01-01", label:"THEMIS-B/C become ARTEMIS P1/P2"},
-          {date:"2010-08-25", label:"P1 enters halo orbit near Earth–Moon L2"}
+          {date:"2009-07-20", label:"THEMIS-B/C repositioning begins as ARTEMIS P1/P2"},
+          {date:"2010-08-25", label:"P1 enters Lissajous orbit near Earth–Moon L2"}
         ]
       },
       {
@@ -364,8 +368,8 @@
         },
         events:[
           {date:"2007-02-17", label:"Launch (as THEMIS)", type:"start"},
-          {date:"2009-01-01", label:"THEMIS-B/C become ARTEMIS P1/P2"},
-          {date:"2010-08-12", label:"P2 enters halo orbit near Earth–Moon L1"}
+          {date:"2009-07-20", label:"THEMIS-B/C repositioning begins as ARTEMIS P1/P2"},
+          {date:"2010-10-22", label:"P2 enters Lissajous orbit near Earth–Moon L1"}
         ]
       },
       {
@@ -406,23 +410,6 @@
           {date:"2021-09-09", label:"Lunar flyby"},
           {date:"2022-01", label:"Transition toward distant retrograde orbit (DRO)"}
         ]
-      },
-      {
-        id:"capstone",
-        cluster:"moon_dro",
-        type:"lunar",
-        label:"🛰️ CAPSTONE 🇺🇸",
-        name:"CAPSTONE",
-        url:"https://www.nasa.gov/mission/capstone/",
-        summaries:{
-          en:"CAPSTONE is a NASA smallsat pathfinder for the Near Rectilinear Halo Orbit (NRHO) planned for Gateway. It demonstrates navigation and validates orbital models, reducing risk for Artemis-era infrastructure.",
-          it:"CAPSTONE è un cubesat NASA dimostratore per la Near Rectilinear Halo Orbit (NRHO) prevista per Gateway. Dimostra navigazione e valida i modelli orbitali, riducendo i rischi per le infrastrutture del programma Artemis.",
-          es:"CAPSTONE es un smallsat de la NASA, precursor de la órbita NRHO prevista para Gateway. Valida navegación y operaciones en NRHO y reduce riesgos para la infraestructura de Artemis.",
-          pt:"O CAPSTONE é um smallsat da NASA, precursor da órbita NRHO planejada para o Gateway. Valida navegação e operações em NRHO e reduz riscos para a infraestrutura do programa Artemis.",
-          fr:"CAPSTONE est un petit satellite de la NASA, précurseur pour l’orbite NRHO envisagée pour Gateway. Il valide navigation et opérations en NRHO et aide à réduire les risques pour l’infrastructure Artemis.",
-          de:"CAPSTONE ist ein NASA-Smallsat als Pathfinder für die geplante NRHO-Bahn des Gateway-Außenpostens. Er demonstriert Navigation/Operations in NRHO und reduziert Risiken für Artemis-Infrastruktur."
-        },
-        events:[{date:"2022-06-28", label:"Launch", type:"start"}]
       },
       {
         id:"droAB",
@@ -568,9 +555,8 @@
         },
         events:[
           {date:"1994-11-01", label:"Launch", type:"start"},
-          {date:"1995-02-08", label:"First lunar swingby"},
-          {date:"1995-12-29", label:"Injection toward L1 region"},
-          {date:"2004-06-30", label:"Transition to permanent L1 operations"},
+          {date:"1996-11", label:"Halo orbit insertion around L1"},
+          {date:"2004", label:"Return to permanent L1 operations"},
           {date:"2019-11-01", label:"25 years of observations"}
         ]
       },
@@ -591,7 +577,7 @@
         },
         events:[
           {date:"1995-12-02", label:"Launch", type:"start"},
-          {date:"1996-01-14", label:"Halo L1 orbital insertion"},
+          {date:"1996-02-14", label:"Halo L1 orbital insertion"},
           {date:"1998-06-25", label:"Contact lost"},
           {date:"1998-09-16", label:"Mission recovery complete"}
         ]
@@ -614,7 +600,6 @@
         events:[
           {date:"1997-08-25", label:"Launch", type:"start"},
           {date:"1997-12-12", label:"Halo orbit insertion at L1"},
-          {date:"2008-09-01", label:"Extended mission phase"},
           {date:"2017-08-25", label:"20 years of operations"}
         ]
       },
@@ -679,18 +664,21 @@
         id:"swfo",
         cluster:"l1",
         type:"lagrange",
-        label:"🛰️ SWFO-L1 🇺🇸",
-        name:"SWFO-L1",
-        url:"https://science.nasa.gov/mission/swfo-l1/",
+        label:"🛰️ SOLAR-1 (ex SWFO-L1) 🇺🇸",
+        name:"SOLAR-1 (ex SWFO-L1)",
+        url:"https://www.nesdis.noaa.gov/our-satellites/future-programs/swfo/space-weather-follow-lagrange-1-swfo-l1",
         summaries:{
-          en:"SWFO-L1 is intended to provide operational solar-wind and magnetic-field measurements from Sun–Earth L1 to support forecasting of geomagnetic storms and other space-weather effects.",
-          it:"SWFO-L1 è pensata per fornire misure operative di vento solare e campo magnetico da L1 Sole–Terra, supportando la previsione di tempeste geomagnetiche e altri effetti di space weather.",
-          es:"SWFO-L1 proporcionará medidas operativas continuas del viento solar y del campo magnético desde L1. El monitoreo “upstream” ayuda a predecir tormentas geomagnéticas e impactos en satélites, comunicaciones y redes eléctricas.",
-          pt:"O SWFO-L1 fornecerá medições operacionais contínuas do vento solar e do campo magnético a partir de L1. O monitoramento a montante ajuda a prever tempestades geomagnéticas e impactos em satélites, comunicações e redes elétricas.",
-          fr:"SWFO-L1 fournira des mesures opérationnelles continues du vent solaire et du champ magnétique depuis L1. La surveillance amont aide à prévoir tempêtes géomagnétiques et impacts sur satellites, communications et réseaux électriques.",
-          de:"SWFO-L1 liefert kontinuierliche operative Messungen von Sonnenwind und Magnetfeld von L1 aus. Das Upstream-Monitoring unterstützt Vorhersagen geomagnetischer Stürme und Auswirkungen auf Satelliten, Kommunikation und Stromnetze."
+          en:"SOLAR-1 (Space weather Observations at L1 to Advance Readiness), formerly SWFO-L1, is NOAA’s spacecraft intended to provide operational solar-wind and magnetic-field measurements from Sun–Earth L1 to support forecasting of geomagnetic storms and other space-weather effects.",
+          it:"SOLAR-1 (Space weather Observations at L1 to Advance Readiness), ex SWFO-L1, è il satellite NOAA pensato per fornire misure operative di vento solare e campo magnetico da L1 Sole–Terra, supportando la previsione di tempeste geomagnetiche e altri effetti di space weather.",
+          es:"SOLAR-1 (antes SWFO-L1), satélite de la NOAA, proporciona medidas operativas continuas del viento solar y del campo magnético desde L1. El monitoreo “upstream” ayuda a predecir tormentas geomagnéticas e impactos en satélites, comunicaciones y redes eléctricas.",
+          pt:"O SOLAR-1 (antigo SWFO-L1), satélite da NOAA, fornece medições operacionais contínuas do vento solar e do campo magnético a partir de L1. O monitoramento a montante ajuda a prever tempestades geomagnéticas e impactos em satélites, comunicações e redes elétricas.",
+          fr:"SOLAR-1 (ex-SWFO-L1), satellite de la NOAA, fournit des mesures opérationnelles continues du vent solaire et du champ magnétique depuis L1. La surveillance amont aide à prévoir tempêtes géomagnétiques et impacts sur satellites, communications et réseaux électriques.",
+          de:"SOLAR-1 (ehemals SWFO-L1), ein NOAA-Satellit, liefert kontinuierliche operative Messungen von Sonnenwind und Magnetfeld von L1 aus. Das Upstream-Monitoring unterstützt Vorhersagen geomagnetischer Stürme und Auswirkungen auf Satelliten, Kommunikation und Stromnetze."
         },
-        events:[{date:"2025-09-24", label:"Launch", type:"start"}]
+        events:[
+          {date:"2025-09-24", label:"Launch", type:"start"},
+          {date:"2026-01-23", label:"L1 orbit reached; renamed SOLAR-1"}
+        ]
       },
 
       /* ===== L2 ===== */
@@ -801,8 +789,7 @@
         },
         events:[
           {date:"2001-04-07", label:"Launch", type:"start"},
-          {date:"2001-10-24", label:"Mars orbit insertion"},
-          {date:"2021", label:"Orbital plane change"}
+          {date:"2001-10-24", label:"Mars orbit insertion"}
         ]
       },
       {
@@ -842,7 +829,7 @@
         },
         events:[
           {date:"2005-08-12", label:"Launch", type:"start"},
-          {date:"2006-03-03", label:"Mars orbit insertion"}
+          {date:"2006-03-10", label:"Mars orbit insertion"}
         ]
       },
       {
@@ -861,7 +848,7 @@
           de:"Curiosity erkundet seit 2012 den Gale-Krater, um frühere Bewohnbarkeit zu bewerten. Es untersucht Gestein/Sedimente, misst Umweltbedingungen und verfolgt eine Langzeitroute, die den Wandel des Mars von einem feuchteren früheren Zustand zum heutigen erklärt."
         },
         events:[
-          {date:"2011-11-12", label:"Launch", type:"start"},
+          {date:"2011-11-26", label:"Launch", type:"start"},
           {date:"2012-08-06", label:"Landing"}
         ]
       },
@@ -988,7 +975,7 @@
         },
         events:[
           {date:"2014-12-03", label:"Launch", type:"start"},
-          {date:"2026-07-21", label:"(98943) Torifune flyby"},
+          {date:"2026-07-05", label:"(98943) Torifune flyby"},
           {date:"2031", label:"(162173) 1998 KY26"}
         ]
       },
@@ -1009,8 +996,9 @@
         },
         events:[
           {date:"2016-09-08", label:"OSIRIS-REx launch", type:"start"},
-          {date:"2023-09", label:"Mission extension as OSIRIS-APEX"},
-          {date:"2029-04-21", label:"Apophis flyby"}
+          {date:"2022-04", label:"Extension approved as OSIRIS-APEX"},
+          {date:"2023-09-24", label:"Bennu sample capsule delivered to Earth; spacecraft continues as OSIRIS-APEX"},
+          {date:"2029-04", label:"Arrival at Apophis (after its 13 Apr 2029 Earth flyby)"}
         ]
       },
       {
@@ -1030,6 +1018,8 @@
         },
         events:[
           {date:"2021-10-16", label:"Launch", type:"start"},
+          {date:"2023-11-01", label:"(152830) Dinkinesh flyby"},
+          {date:"2025-04-20", label:"(52246) Donaldjohanson flyby"},
           {date:"2027-08-12", label:"(3548) Eurybates flyby"},
           {date:"2027-09-15", label:"(15094) Polymele flyby"},
           {date:"2028-04-18", label:"(11351) Leucus flyby"},
@@ -1094,7 +1084,8 @@
         },
         events:[
           {date:"2025-05-28", label:"Launch", type:"start"},
-          {date:"2026-07", label:"Sample collection (469219) Kamoʻoalewa"},
+          {date:"2026-07-04", label:"Arrival at (469219) Kamoʻoalewa; sampling campaign Jul 2026–Apr 2027"},
+          {date:"2027-11-29", label:"Sample return capsule landing (planned)"},
           {date:"2033", label:"311P/PANSTARRS comet flyby"}
         ]
       },
@@ -1137,7 +1128,7 @@
         },
         events:[
           {date:"2023-04-14", label:"Launch", type:"start"},
-          {date:"2031-08", label:"Jupiter orbital insertion"}
+          {date:"2031-07", label:"Jupiter orbital insertion"}
         ]
       },
       {
@@ -1180,7 +1171,8 @@
         events:[
           {date:"2006-01-19", label:"Launch", type:"start"},
           {date:"2007-02-28", label:"Jupiter flyby"},
-          {date:"2015-07-14", label:"Pluto flyby"}
+          {date:"2015-07-14", label:"Pluto flyby"},
+          {date:"2019-01-01", label:"Arrokoth flyby"}
         ]
       },
       {
