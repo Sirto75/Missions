@@ -1198,7 +1198,13 @@
           fr:"Voyager 1 (1977) a exploré Jupiter et Saturne avant de poursuivre vers la frontière de l’héliosphère et l’espace interstellaire. Elle reste un symbole de l’exploration lointaine et transmet encore des données tant que les communications le permettent.",
           de:"Voyager 1 (1977) erforschte Jupiter und Saturn und flog anschließend zur Heliosphären-Grenze und in den interstellaren Raum. Sie ist ein Symbol der Tiefraumforschung und sendet – soweit möglich – weiterhin Daten."
         },
-        events:[{date:"1977-09-05", label:"Launch", type:"start"}]
+        timelineScale:{startYear:1975, endYear:2030},
+        sources:["https://science.nasa.gov/mission/voyager/voyager-1/", "https://voyager.gsfc.nasa.gov/mission.html", "https://science.nasa.gov/blogs/voyager/"],
+        events:[
+          {"date":"1977-09-05","label":"Launch","type":"start"},
+          {"date":"1979-03-05","label":"Jupiter flyby"},
+          {"date":"1980-11-12","label":"Saturn flyby"}
+        ]
       },
       {
         id:"voyager2",
@@ -1215,7 +1221,15 @@
           fr:"Voyager 2 (1977) est la seule sonde à avoir visité les quatre géantes : Jupiter, Saturne, Uranus et Neptune. Elle poursuit désormais sa route dans l’espace interstellaire et mesure plasma et champ magnétique au-delà de l’héliosphère.",
           de:"Voyager 2 (1977) ist das einzige Raumfahrzeug, das alle vier Gasriesen besuchte: Jupiter, Saturn, Uranus und Neptun. Heute fliegt sie weiter in den interstellaren Raum und misst Plasma sowie Magnetfeld jenseits der Heliosphäre."
         },
-        events:[{date:"1977-08-20", label:"Launch", type:"start"}]
+        timelineScale:{startYear:1975, endYear:2030},
+        sources:["https://science.nasa.gov/mission/voyager/voyager-2/", "https://voyager.gsfc.nasa.gov/mission.html", "https://science.nasa.gov/blogs/voyager/"],
+        events:[
+          {"date":"1977-08-20","label":"Launch","type":"start"},
+          {"date":"1979-07-09","label":"Jupiter flyby"},
+          {"date":"1981-08-26","label":"Saturn flyby"},
+          {"date":"1986-01-24","label":"Uranus flyby"},
+          {"date":"1989-08-25","label":"Neptune flyby"}
+        ]
       },
     ]
   };

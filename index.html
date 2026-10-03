@@ -843,8 +843,8 @@ mask-image: radial-gradient(circle at center, black 45%, transparent 61%);
     const langSelect   = document.getElementById("langSelect");
     const missionCountBadge = document.getElementById("missionCountBadge");
 
-    const START_YEAR = DASH.scale.startYear;
-    const END_YEAR   = DASH.scale.endYear;
+    let START_YEAR = DASH.scale.startYear;
+    let END_YEAR   = DASH.scale.endYear;
 
     let hideTimer    = null;
     let activeAnchor = null;
@@ -1002,10 +1002,10 @@ mask-image: radial-gradient(circle at center, black 45%, transparent 61%);
       tlSpan.appendChild(cap);
     }
 
-    function buildTicks(){
+    function buildTicks(step = 2){
       tlTicks.innerHTML = "";
       const years = [];
-      for (let y=START_YEAR; y<=END_YEAR; y+=2) years.push(y);
+      for (let y=START_YEAR; y<=END_YEAR; y+=step) years.push(y);
       years.forEach(y=>{
         const t = document.createElement("div");
         t.className = "tick";
@@ -1018,6 +1018,10 @@ mask-image: radial-gradient(circle at center, black 45%, transparent 61%);
     }
 
     function showTimeline(mission){
+      const scale = mission.timelineScale || DASH.scale;
+      START_YEAR = scale.startYear;
+      END_YEAR = scale.endYear;
+      buildTicks(scale.tickStep || 2);
       tlSpan.innerHTML = "";
       tlEvents.innerHTML = "";
       drawNowLine();
@@ -1080,6 +1084,7 @@ mask-image: radial-gradient(circle at center, black 45%, transparent 61%);
         const dot = document.createElement("div");
         dot.className = "event-dot " + dotClass(e.type, e.label);
         dot.style.left = x + "%";
+        dot.title = `${e.date}: ${e.label}`;
         const lab = document.createElement("div");
         lab.className = "event-label";
         lab.style.left = x + "%";
