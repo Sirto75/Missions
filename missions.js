@@ -664,7 +664,7 @@
         id:"swfo",
         cluster:"l1",
         type:"lagrange",
-        label:"🛰️ SOLAR-1 (ex SWFO-L1) 🇺🇸",
+        label:"🛰️ SOLAR-1 🇺🇸",
         name:"SOLAR-1 (ex SWFO-L1)",
         url:"https://www.nesdis.noaa.gov/our-satellites/future-programs/swfo/space-weather-follow-lagrange-1-swfo-l1",
         summaries:{
