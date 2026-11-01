@@ -195,27 +195,6 @@
         events:[{date:"1999-12-10", label:"Launch", type:"start"}]
       },
       {
-        id:"swift",
-        cluster:"earth",
-        type:"telescope",
-        label:"⭐ Swift 🇺🇸",
-        name:"Neil Gehrels Swift Observatory",
-        url:"https://swift.gsfc.nasa.gov/",
-        summaries:{
-          en:"Swift is a multiwavelength observatory designed to rapidly detect and follow up gamma-ray bursts. It combines gamma-ray, X-ray and UV/optical instruments to capture the early afterglow and monitor transient events, also contributing to studies of supernovae, tidal disruption events and variable AGN. A 2026 commercial reboost attempt was cancelled, so Swift’s decaying orbit is expected to lead to reentry.",
-          it:"Swift è un osservatorio multi-banda progettato per rilevare rapidamente i gamma-ray burst e seguirne l’evoluzione. Combina strumenti in gamma, X e UV/ottico per osservare l’afterglow iniziale e monitorare transienti, contribuendo anche a studi su supernovae, eventi di distruzione mareale e AGN variabili. Un tentativo commerciale di reboost nel 2026 è stato annullato: senza di esso l’orbita in decadimento porterà al rientro in atmosfera.",
-          es:"Swift detecta rápidamente estallidos de rayos gamma y los sigue en varias longitudes de onda (gamma, X, UV/óptico). También estudia otros transitorios como supernovas y AGN variables. Un intento comercial de elevar su órbita en 2026 fue cancelado, por lo que se espera su reentrada.",
-          pt:"O Swift detecta rapidamente GRBs e faz acompanhamento multi-comprimento de onda (gama, X, UV/óptico). Também observa outros transientes como supernovas e AGNs variáveis. Uma tentativa comercial de elevar sua órbita em 2026 foi cancelada, e a reentrada é esperada.",
-          fr:"Swift détecte rapidement les sursauts gamma et en assure le suivi multi-longueurs d’onde (gamma, X, UV/optique). Il observe aussi d’autres transitoires comme supernovae et noyaux actifs variables. Une tentative commerciale de rehaussement d’orbite en 2026 a été annulée ; sa rentrée atmosphérique est donc attendue.",
-          de:"Swift ist auf die schnelle Entdeckung und Nachbeobachtung von Gamma-Ray Bursts ausgelegt (Gamma, Röntgen, UV/optisch). Zudem liefert es Daten zu weiteren Transienten wie Supernovae und variablen AGN. Ein kommerzieller Reboost-Versuch 2026 wurde abgebrochen; der Wiedereintritt wird daher erwartet."
-        },
-        events:[
-          {date:"2004-11-20", label:"Launch", type:"start"},
-          {date:"2026-07-03", label:"Katalyst LINK reboost spacecraft launched"},
-          {date:"2026-08-19", label:"Reboost attempt cancelled (LINK attitude-control problems)"}
-        ]
-      },
-      {
         id:"tess",
         cluster:"earth",
         type:"telescope",
