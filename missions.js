@@ -936,6 +936,27 @@
         ]
       },
 
+      {
+        id:"mmx",
+        cluster:"mars",
+        type:"generic",
+        label:"🛸 MMX 🇯🇵",
+        name:"Martian Moons eXploration (MMX)",
+        url:"https://www.mmx.jaxa.jp/en/",
+        summaries:{
+          en:"MMX is a JAXA sample-return mission to the Martian moons. It will orbit Phobos, land to collect at least 10 g of regolith, deploy the CNES–DLR Idefix rover, fly by Deimos and bring the samples to Earth in 2031.",
+          it:"MMX è una missione JAXA di ritorno campioni dalle lune di Marte. Orbiterà attorno a Phobos, vi atterrerà per raccogliere almeno 10 g di regolite, rilascerà il rover Idefix (CNES–DLR), sorvolerà Deimos e riporterà i campioni a Terra nel 2031.",
+          es:"MMX es una misión de JAXA de retorno de muestras de las lunas de Marte. Orbitará Fobos, aterrizará para recoger al menos 10 g de regolito, desplegará el rover Idefix (CNES–DLR), sobrevolará Deimos y traerá las muestras a la Tierra en 2031.",
+          pt:"A MMX é uma missão da JAXA de retorno de amostras das luas de Marte. Orbitará Fobos, pousará para coletar ao menos 10 g de regolito, liberará o rover Idefix (CNES–DLR), sobrevoará Deimos e trará as amostras à Terra em 2031.",
+          fr:"MMX est une mission de la JAXA de retour d’échantillons des lunes de Mars. Elle orbitera autour de Phobos, s’y posera pour prélever au moins 10 g de régolithe, déploiera le rover Idefix (CNES–DLR), survolera Déimos et rapportera les échantillons sur Terre en 2031.",
+          de:"MMX ist eine JAXA-Probenrückführungsmission zu den Marsmonden. Sie umkreist Phobos, landet dort, um mindestens 10 g Regolith zu sammeln, setzt den CNES–DLR-Rover Idefix aus, fliegt an Deimos vorbei und bringt die Proben 2031 zur Erde."
+        },
+        events:[
+          {date:"2026-10-20", label:"Launch (H3 F10)", type:"start"},
+          {date:"2027", label:"Mars arrival; Phobos landing & sampling (planned)"}
+        ]
+      },
+
       /* ===== ASTEROIDS ===== */
       {
         id:"hayabusa2",
